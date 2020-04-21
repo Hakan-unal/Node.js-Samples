@@ -1,0 +1,14 @@
+extends layouts/main-layout.pug
+
+block content
+    .card
+        .card-body
+            form(name="form" for="/admin/sign-in" method="POST").form-group
+                label(for="name") Name
+                input(type="text" name='name').form-control.form-group#name
+                label(for="password") Password
+                input(type="password" name='password').form-control.form-group#password
+                button(type="submit").btn.btn-dark Sign-In
+
+        .card-footer.bg-dark
+            small.form-text.text-light We'll never share your personality information with anyone else.

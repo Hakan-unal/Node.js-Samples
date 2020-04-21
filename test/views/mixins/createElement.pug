@@ -1,0 +1,20 @@
+mixin createElement(personel)
+    .col-md-4
+        .card.my-3
+            .card-header.text-capitalize 
+                span.font-weight-bold Name: 
+                span #{personel.name} 
+                span.font-weight-bold Surname: 
+                span #{personel.surname}
+            .card-body
+                h4.card-title.text-capitalize 
+                span.font-weight-bold Department: 
+                span.text-uppercase #{personel.department}
+                                
+                p.card-text.pt-2 
+                span.font-weight-bold Email: 
+                span #{personel.email}  
+                            
+            .card-footer.bg-dark
+                small.text-light Password: #{personel.password}
+                a.btn.btn-light.btn-sm.mr-2(href=`/admin/edit-personel/${personel.id}`) Edit

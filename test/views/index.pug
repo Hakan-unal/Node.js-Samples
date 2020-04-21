@@ -1,0 +1,13 @@
+extends layouts/main-layout
+
+include mixins/createElement
+
+
+
+block content
+    .row
+        if personels !== null
+            each personel in personels
+                +createElement(personel)
+        else
+            h1 No Products

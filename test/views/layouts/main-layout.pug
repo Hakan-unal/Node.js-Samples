@@ -1,0 +1,18 @@
+html(lang="en")
+
+    include ../includes/head
+
+    body
+
+        include ../includes/navbar          
+
+        .container-fluid.m-5.pl-0
+            .row
+                .col-lg-2
+                    include ../includes/menu
+
+                .col-lg-8.ml-5
+                    block content
+
+
+    include ../includes/scripts

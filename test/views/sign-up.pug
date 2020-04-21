@@ -1,0 +1,26 @@
+extends layouts/main-layout.pug
+
+block content
+    .card
+        .card-body
+            form(name="sign-up" for="/admin/sign-up" method="POST").form-group
+                label(for="name") Name
+                input(type="text" name="name").form-control.form-group#name
+
+                label(for="surname") Surname
+                input(type="text" name="surname").form-control.form-group#surname
+
+                label(for="department") Department
+                input(type="text" name="department").form-control.form-group#department
+
+                label(for="email") Email
+                input(type="email" name="email").form-control.form-group#email
+
+                label(for="password") Password
+                input(type="password" name="password").form-control.form-group#password
+
+                button(type="submit").btn.btn-dark Sign Up
+
+
+        .card-footer.bg-dark
+            small.form-text.text-light We'll never share your personality information with anyone else.
